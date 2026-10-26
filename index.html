@@ -7,18 +7,354 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BeatBoard</title>
 </head>
-<body>
-<div class="left_sidebar">
-    <div class="main_sidebar">
+<body class="page">
 
-    </div>
-    <div class="account_block">
-    </div>
+<div class="dashboard">
+
+    <aside class="sidebar">
+        <a class="sidebar__logo" href="#"></a>
+
+        <nav class="sidebar__nav">
+            <a class="sidebar__link sidebar__link--active" href="#"></a>
+            <a class="sidebar__link" href="#"></a>
+            <a class="sidebar__link" href="#"></a>
+            <a class="sidebar__link" href="#"></a>
+        </nav>
+
+        <div class="sidebar__profile">
+            <div class="user-profile">
+                <div class="user-profile__avatar"></div>
+
+                <div class="user-profile__info">
+                    <span class="user-profile__name"></span>
+                    <span class="user-profile__role"></span>
+                </div>
+
+                <button
+                        class="user-profile__logout"
+                        type="button"
+                ></button>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main">
+
+        <header class="header">
+            <div class="header__intro">
+                <h1 class="header__title"></h1>
+                <p class="header__description"></p>
+            </div>
+
+            <div class="header__actions">
+                <form class="search" role="search">
+                    <label class="search__label">
+                        <span class="search__icon"></span>
+                        <input
+                                class="search__input"
+                                type="search"
+                        >
+                    </label>
+                </form>
+
+                <button
+                        class="button button--primary header__create-button"
+                        type="button"
+                >
+                    <span class="button__icon"></span>
+                    <span class="button__text"></span>
+                </button>
+            </div>
+        </header>
+
+        <section class="projects">
+
+            <div class="projects__header">
+                <div class="projects__intro">
+                    <h2 class="projects__title"></h2>
+                    <p class="projects__description"></p>
+                </div>
+
+                <div class="projects__statistics">
+
+                    <div class="statistic">
+                        <span class="statistic__value"></span>
+                        <span class="statistic__label"></span>
+                    </div>
+
+                    <div class="statistic">
+                        <span class="statistic__value"></span>
+                        <span class="statistic__label"></span>
+                    </div>
+
+                    <div class="statistic">
+                        <span class="statistic__value"></span>
+                        <span class="statistic__label"></span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="projects__filters">
+                <span class="projects__filters-label"></span>
+
+                <div class="filter">
+                    <button
+                            class="filter__button filter__button--active"
+                            type="button"
+                    ></button>
+
+                    <button
+                            class="filter__button"
+                            type="button"
+                    ></button>
+
+                    <button
+                            class="filter__button"
+                            type="button"
+                    ></button>
+
+                    <button
+                            class="filter__button"
+                            type="button"
+                    ></button>
+                </div>
+            </div>
+
+            <div class="projects__list">
+
+                <article class="project-card project-card--in-progress">
+                    <div class="project-card__visual">
+                        <div class="project-card__visual-header">
+                            <h3 class="project-card__visual-title"></h3>
+
+                            <button
+                                    class="project-card__play"
+                                    type="button"
+                            >
+                                <span class="project-card__play-icon"></span>
+                            </button>
+                        </div>
+
+                        <div class="waveform">
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                        </div>
+                    </div>
+
+                    <div class="project-card__content">
+                        <div class="project-card__header">
+                            <h3 class="project-card__title"></h3>
+                            <button
+                                    class="project-card__favorite project-card__favorite--active"
+                                    type="button"
+                            ></button>
+                        </div>
+
+                        <div class="project-card__metadata">
+                            <span class="project-card__tempo"></span>
+                            <span class="project-card__separator"></span>
+                            <span class="project-card__key"></span>
+                        </div>
+
+                        <span class="project-card__status project-card__status--in-progress"></span>
+                    </div>
+                </article>
+
+                <article class="project-card project-card--idea">
+                    <div class="project-card__visual">
+                        <div class="project-card__visual-header">
+                            <h3 class="project-card__visual-title"></h3>
+
+                            <button
+                                    class="project-card__play"
+                                    type="button"
+                            >
+                                <span class="project-card__play-icon"></span>
+                            </button>
+                        </div>
+
+                        <div class="waveform">
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                        </div>
+                    </div>
+
+                    <div class="project-card__content">
+                        <div class="project-card__header">
+                            <h3 class="project-card__title"></h3>
+                            <button
+                                    class="project-card__favorite"
+                                    type="button"
+                            ></button>
+                        </div>
+
+                        <div class="project-card__metadata">
+                            <span class="project-card__tempo"></span>
+                            <span class="project-card__separator"></span>
+                            <span class="project-card__key"></span>
+                        </div>
+
+                        <span class="project-card__status project-card__status--idea"></span>
+                    </div>
+                </article>
+
+                <article class="project-card project-card--idea">
+                    <div class="project-card__visual">
+                        <div class="project-card__visual-header">
+                            <h3 class="project-card__visual-title"></h3>
+
+                            <button
+                                    class="project-card__play"
+                                    type="button"
+                            >
+                                <span class="project-card__play-icon"></span>
+                            </button>
+                        </div>
+
+                        <div class="waveform">
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                        </div>
+                    </div>
+
+                    <div class="project-card__content">
+                        <div class="project-card__header">
+                            <h3 class="project-card__title"></h3>
+                            <button
+                                    class="project-card__favorite"
+                                    type="button"
+                            ></button>
+                        </div>
+
+                        <div class="project-card__metadata">
+                            <span class="project-card__tempo"></span>
+                            <span class="project-card__separator"></span>
+                            <span class="project-card__key"></span>
+                        </div>
+
+                        <span class="project-card__status project-card__status--idea"></span>
+                    </div>
+                </article>
+
+                <article class="project-card project-card--finished">
+                    <div class="project-card__visual">
+                        <div class="project-card__visual-header">
+                            <h3 class="project-card__visual-title"></h3>
+
+                            <button
+                                    class="project-card__play"
+                                    type="button"
+                            >
+                                <span class="project-card__play-icon"></span>
+                            </button>
+                        </div>
+
+                        <div class="waveform">
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                            <span class="waveform__bar"></span>
+                        </div>
+                    </div>
+
+                    <div class="project-card__content">
+                        <div class="project-card__header">
+                            <h3 class="project-card__title"></h3>
+                            <button
+                                    class="project-card__favorite project-card__favorite--active"
+                                    type="button"
+                            ></button>
+                        </div>
+
+                        <div class="project-card__metadata">
+                            <span class="project-card__tempo"></span>
+                            <span class="project-card__separator"></span>
+                            <span class="project-card__key"></span>
+                        </div>
+
+                        <span class="project-card__status project-card__status--finished"></span>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="activity">
+
+            <h2 class="activity__title"></h2>
+
+            <ul class="activity__list">
+
+                <li class="activity__item">
+                    <span class="activity__icon"></span>
+
+                    <div class="activity__content">
+                        <h3 class="activity__item-title"></h3>
+                        <p class="activity__description"></p>
+                    </div>
+
+                    <time class="activity__time"></time>
+                </li>
+
+                <li class="activity__item">
+                    <span class="activity__icon"></span>
+
+                    <div class="activity__content">
+                        <h3 class="activity__item-title"></h3>
+                        <p class="activity__description"></p>
+                    </div>
+
+                    <time class="activity__time"></time>
+                </li>
+
+                <li class="activity__item">
+                    <span class="activity__icon"></span>
+
+                    <div class="activity__content">
+                        <h3 class="activity__item-title"></h3>
+                        <p class="activity__description"></p>
+                    </div>
+
+                    <time class="activity__time"></time>
+                </li>
+
+            </ul>
+        </section>
+
+    </main>
+
 </div>
 
-
-<main class="main">
-
-</main>
 </body>
 </html>
